@@ -1,0 +1,355 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+/* nav right : 1 - #040607 2-#0d0e16, 3- #151725 */
+
+:root {
+    --first-black: #040607;
+    --second-black: #0d0e16;
+    --third-black: #151725;
+    /* --main-backgound: radial-gradient(circle, rgb(177, 50, 19) 0%, rgba(3,17,73,1) 100%); */
+    --main-backgound: black;
+    --a-color:#f04d28;
+    --shadow-white:0 0 5px #1BA098;
+    --shadow-black:0 0 5px black;
+     /* #00a4f1; */
+    /* --a-color-white: #DEB992; */
+}
+
+a{
+    text-decoration: none;
+    color: var(--a-color);
+}
+
+.Main{
+    display: flex;
+    background-repeat: no-repeat;
+    background-size: cover;
+    flex-direction: row;
+
+}
+
+.Main > div:nth-of-type(even){
+    flex: 3;
+    height: 100vh;
+}
+
+/* .Main > div:nth-of-type(odd){
+    flex: 1;
+} */
+
+.Main > div:nth-of-type(odd){
+    flex: 1;
+    transition: 0.5s ease;
+}
+
+
+.centerMain{
+    overflow-y: scroll;
+    padding-top: 1.30vh;
+    background: var(--second-black);
+}
+
+.centerMain::-webkit-scrollbar{
+    display: block;
+    width: 0.1vw;
+}
+
+.centerMain::-webkit-scrollbar-track{
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 1vw;
+}
+
+.centerMain::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+    border-radius: 1vw;
+}
+
+.hideH{
+    height: 0 !important;
+    width: 0 !important;
+    overflow: hidden;
+}
+
+.hideDis{
+    display: none !important;
+}
+
+button{
+    cursor: pointer;
+}
+
+.noTransition{
+    transition: none !important;
+}
+
+
+
+
+
+
+@media (max-width: 1180px) {
+/* MAIN */
+    *{
+        -webkit-tap-highlight-color: rgba(0,0,0,0);
+    }
+
+    * :hover{
+        transform: none !important;
+        /* MOBILE ONLINE */
+    }
+
+    .Main > div:nth-of-type(odd){
+        width: 0;
+        position: absolute;
+        z-index: 5;
+    }
+
+    .Main > div:first-of-type{
+        left: 0;
+    }
+    
+    .Main > div:last-of-type{
+        right: 0;
+        padding-top: 6vh;
+    }
+
+    .centerMain{
+        overflow-x: hidden;
+    }
+
+    .searchMain{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .leftHamburger, .rightHamburger{
+        display: flex !important;
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        width: 4vh;
+        height: 4vh;
+        transition: 0.5s;
+    }
+
+    .leftHamburger span, .rightHamburger span {
+        display: inline-block;
+        width: 100%;
+        height: 0.5vh;
+        border-radius: 8px;
+        background-color: var(--a-color);
+    }
+
+    .leftOpenHamburger, .rightOpenHamburger{
+      transform: rotateZ(-180deg) !important;
+    }
+
+    .rightOpenHamburger span:first-of-type{
+        transform: rotateZ(315deg) scaleX(0.75) translate(-12px, 0px) !important;
+    }
+
+    .rightOpenHamburger span:last-of-type{
+        transform: rotateZ(-315deg) scaleX(0.75) translate(-12px, 0px) !important;
+    }
+
+    
+    .leftOpenHamburger span:first-of-type{
+        transform: rotateZ(45deg) scaleX(0.75) translate(12px, 0px) !important;
+    }
+
+    .leftOpenHamburger span:last-of-type{
+        transform: rotateZ(-45deg) scaleX(0.75) translate(12px, 0px) !important;
+    }
+
+    .leftHamburger{
+        margin-left: 1vw;
+        margin-right: auto;
+    }
+
+    .rightHamburger{
+        margin-right: 1vw;
+        margin-left: auto;
+    }
+
+    .searchSpacer{
+        display: none;
+    }
+
+    .searchForm {
+        width: 50% !important;
+    }
+
+    .openSelects {
+        width: 5% !important;
+    }
+
+
+/* NAV LEFT */
+    .navLeftUp{
+        margin-top: 6vh !important;
+    }
+
+    /* .navLeftUp >.navLeftText{
+        font-size: 1.4rem;
+    } */
+
+    .navLeftText, .logoImg{
+        transition: color 0.01s ease-in !important;
+        will-change: color, font-size, padding;
+        color: transparent !important;
+        font-size: 0 !important;
+    }
+
+    .logoImg{
+        width: 0 !important;
+        height: 0 !important;
+    }
+
+    .navLeftTextMobile{
+        color: white;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        font-size: 1.4rem;
+        font-weight: bolder;
+        padding: 8.5vw 9.9vw;
+        transition:font-size 0.7s ease-in, padding 0.01s ease-in 0.7s, color 0.2s ease-in 0.7s ;
+        will-change:font-size, padding, color;
+    }
+
+    .logoImgMobile{
+        width: 1.3vh;
+        height: 1.3vh;
+        transition: 0.01s ease-in;
+        transition-delay: 0.7s;
+    }
+
+
+    .select-red {
+        color: var(--a-color) !important;
+    }
+
+    .navLeft > div{
+        visibility: hidden !important;
+    }
+
+    .navMobileLeft > div{
+        visibility: visible !important;
+        transition: visibility 0.15s ease 0.2s;
+    }
+
+    .navMobileLeft{
+        width: 35% !important;
+    }
+
+    .liveDataMatch > div {
+        margin-top: 5px !important;
+        margin-bottom: 5px !important;
+    }
+
+/* NAV RIGHT */
+    .nav-sports{
+        padding: 3vw 0.8vw !important;
+    }
+
+    .nav-country, .nav-league{
+        padding: 2vw 0.4vw !important;
+    }
+
+    .navRight-container > div{
+        visibility: hidden;
+        /* transition: visibility 0.01s ease 0.1s; */
+    }
+
+    .navMobileRight > div {
+        visibility: visible !important;
+        transition: visibility 0.15s ease 0.15s;
+    }
+
+    .navMobileRight {
+        width: 35% !important;
+    }
+
+
+/* MATCH DETAILS  */
+
+    .matchTime{
+        font-size: 0.55rem !important;
+    }
+
+    .matchOods{
+        margin-top: 10vh !important;
+        margin-bottom: 12vh !important;
+    }
+  
+/* MATCH SIMPLE */
+    .matchSimpleTime{
+        width: 20% !important;
+    }
+
+    .containerSimpleCardLogo > img{
+        height: 2vh !important;
+        width: 2vh !important;
+    }
+
+}
+
+@media (max-width: 768px) {
+
+    .openSelects {
+        width: 6% !important;
+    }
+
+    .navMobileRight {
+        width: 50% !important;
+    }
+
+    .navMobileLeft{
+        width: 50% !important;
+    }
+
+
+    .nav-sports{
+        padding: 5vw 1vw !important;
+    }
+
+    .nav-country, .nav-league{
+        padding: 3.5vw 0.6vw !important;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .openSelects {
+        width: 7% !important;
+    }
+
+    .navMobileRight {
+        width: 75% !important;
+    }
+
+    .navMobileLeft{
+        width: 75% !important;
+    }
+
+
+    .nav-sports{
+        padding: 6.5vw 1vw !important;
+    }
+
+    .nav-country, .nav-league{
+        padding: 4.5vw 0.6vw !important;
+    }
+
+    .navLeftTextMobile{
+        font-size: 1.15rem;
+        padding: 6vh 9.5vh;
+    }
+}

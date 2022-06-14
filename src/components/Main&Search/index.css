@@ -1,0 +1,93 @@
+.searchContainer{
+    width: 98.1%;
+    height: 5vh;
+    background-color: var(--first-black);
+    box-shadow: 0 0 4px black;
+    color: white;
+    border-top-right-radius: 0.2vw;
+    border-bottom-right-radius: 0.2vw;
+    border: none;
+    outline:none;
+    font-size: large;
+    text-align: center;
+    transition: width 0.5s ease;
+}
+
+.searchMain{
+    display: flex;
+    flex-direction: row;
+    position: relative;
+}
+
+.searchSpacer{
+    width: 1.8%;
+}
+
+.searchImg{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5vh;
+    width: 5vh;
+    background-color: var(--first-black);
+    box-shadow: 0 0 4px black;
+    border-top-right-radius: 0.2vw;
+    border-bottom-right-radius: 0.2vw;
+    cursor: pointer;
+}
+
+.searchImg:hover{
+    transform: scale(102%);
+    background-color: transparent;
+}
+
+.searchImg img{
+    width: 2.5vh;
+    height: 2.5vh;
+}
+
+.searchForm{
+    transition: 0.5s ease;
+    width: 100%;
+}
+
+
+.searchResult{
+    height: 92.5vh;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+}
+
+.noSearchResult{
+    color: white;
+    text-align: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.searchResult::-webkit-scrollbar{
+    width: 0.5vmin;
+    display: block;
+}
+
+.searchResult::-webkit-scrollbar-thumb{
+    background-color: greenyellow;
+
+}
+
+.searchMatch{
+    padding: 1vmin;
+    transition: 0.1s ease-in;
+    background-color: #03080a !important;
+}
+
+.searchMatch:hover{
+    transform: scale(102%);
+    /* transform: translate(0vw, -0.5vh); */
+}
+
+.leftHamburger, .rightHamburger{
+    display: none;
+    z-index: 10;
+}

@@ -1,0 +1,263 @@
+.navLeftLive{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    /* overflow: hidden; */
+    padding-bottom: 2vh;
+}
+
+.hideOpacity{
+    opacity: 0;
+}
+
+.navLeftLiveCar{
+    width: 90%;
+    height: 100%;
+    background-color: var(--first-black);
+    box-shadow: 0 0 5px black;
+    border-radius: 0.3vw;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+}
+
+.liveDataContainer{
+    /* width: 16.5vw; */
+    height: 100%;
+    overflow: hidden;
+    display: flex;
+    flex-direction: row;
+    color: blanchedalmond;
+}
+
+.liveButtons {
+    display: flex;
+    flex-direction: row;
+}
+
+.liveButtons > button{
+    width: 25%;
+    padding: 7px;
+    background-color: black;
+    color: white;
+    border: none;
+    box-shadow: 0 0.1vw 0.1vw -0.1vw greenyellow;
+    border-radius: 0.1vw;
+    cursor: pointer;
+    text-transform: capitalize;
+}
+
+.liveButtons > button:hover{
+    box-shadow: 0 0.12vw 0.15vw -0.12vw greenyellow;
+    color: rgb(238, 247, 225);
+    transform: scale(101%);
+}
+
+.liveDataMatch{
+    flex-shrink: 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    padding: 0.8vmin;
+    justify-content: space-between;
+    transition: margin-left 1.0s ease;
+    will-change: margin-left, ;
+}
+
+.liveDataMatch > div {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.matchLivePath{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    width: 100%;
+    font-size:0.7rem;
+}
+
+.matchLivePath > span{
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.matchLiveTeamsImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    transition: height 0.5s ease-out, width 0.5s ease-out;
+    will-change: height, width;
+}
+
+.matchLiveTeamsImg > div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    transition: height 0.5s ease-out, width 0.5s ease-out;
+    will-change: height, width;
+    margin: 1vh;
+}
+
+.matchLiveTeamsImg img{
+    width: 40px;
+    height: 40px;
+    /* transition: 0.5s ease-out;
+    will-change: height, width; */
+}
+
+.matchLiveHomeImg{
+    border-left: 1px solid blue;
+}
+
+.matchLiveAwayImg{
+    border-right: 1px solid red;
+}
+
+.matchLiveBarTime{
+    font-size: xx-small;
+}
+
+.matchLiveBarTime > .bar{
+    width: 100%;
+    height: 0.15vh;
+    background:linear-gradient(to right , red 60%, white 40%);
+}
+
+.matchLiveTeams{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+
+.matchLiveTeams > div{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    font-size: small;
+}
+
+.matchLiveTeams > div > div{
+    width: 75%;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+
+.matchLiveShowOdds {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.matchLiveShowOdds > button{
+    padding: 2px 12px 2px 12px;
+    background-color: transparent;
+    color: white;
+    font-size: small;
+    font-weight: 600;
+    border: none;
+    box-shadow: 0 2px 2px -2px greenyellow;
+}
+
+.matchLiveShowOdds > button:hover{
+    box-shadow: 0 0.12vw 0.13vw -0.12vw greenyellow;
+    color: rgb(238, 247, 225);
+    transform: scale(103%);
+}
+
+.select-red {
+    box-shadow: 0 0.25vw 0.25vw -0.25vw red !important;
+}
+
+.matchLivePlus{
+    height: 0vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    transition: height 1s ease-in-out, width 1s ease-in-out;
+    will-change: height, width;
+    /* width: 100%;
+    height: 50%; */
+}
+
+.showPlusLive{
+    height: 48vh !important;
+    width: 100% !important;
+}
+
+.heightAuto{
+    height: auto !important;
+}
+
+
+.singleOdLive{
+    padding: 1vw;
+    margin:1vw;
+}
+
+
+.matchOddsLive{
+    /* height: 30%; */
+    transition: width 0.5s ease, height 0.5s ease;
+}
+.matchOddsLive td{
+    background-color: rgb(43, 42, 42);
+}
+
+.matchOddsLive th{
+    background-color: rgba(27, 27, 27, 0.849);
+}
+
+.matchOddsLive tr td:first-child{
+    justify-content: center;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+    padding-top: 0.5vh;
+    padding-bottom: 0.5vh;
+}
+
+.matchOddsLive tr img{
+    margin: 0 0.5vw 0 0.3vw;
+    border-radius: 0.2vw;
+}
+
+.matchTableOodsLive{
+    width: 100%;
+}
+
+.matchTableOodsLive p, .matchTableOodsLive td, .matchTableOodsLive th{
+    font-size: 0.8rem;
+    border-radius: 0.4vw;
+    text-align: center;
+    padding-top: 0.2vh;
+    padding-bottom: 0.2vh;
+}
+
+
+.matchStatsCircles{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+}
+
+#live-img{
+    width: 2.5vh;
+    height: 1.3vh;
+}
+
+.matchStatsLive{
+    height: 50%;
+    transition: width 0.5s ease, height 0.5s ease;
+}

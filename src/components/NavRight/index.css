@@ -1,0 +1,58 @@
+.navRight-container{
+    height: 100vh;
+    overflow-y: scroll;
+    box-shadow: 0 0 10px black;
+    background-color: var(--first-black);
+    scroll-behavior: smooth;
+}
+
+::-webkit-scrollbar {
+    display: none;
+}
+
+.nav-sports{
+    width: 100%;
+    padding: 1.7vw 0.3vw 1.7vw 1vw;
+    border-bottom: solid 0.2vw var(--second-black);
+    color: honeydew;
+    font-size: small;
+    font-weight: bold;
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.on:hover{
+    transform: scale(1.05);
+    box-shadow: 0 0 2px yellowgreen;
+}
+
+.nav-country{
+    padding: 1vw;
+    margin: 0.35vh;
+    background-color: var(--second-black);
+    cursor: pointer;
+    transition: transform .2s;
+}
+
+.nav-country > p {
+    display: inline;
+    margin-left: 1vh;
+}
+
+.nav-league{
+    padding: 0.7vw;
+    margin: 0.35vh;
+    background-color: var(--third-black);
+    transition: transform .2s;
+}
+
+.navLogo{
+    width: 2vh;
+    height: 2vh;
+    vertical-align: top;
+}
+
+
+/* .navMobileRight {
+    width: 30% !important;
+} */

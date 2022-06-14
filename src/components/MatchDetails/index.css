@@ -1,0 +1,174 @@
+.matches-container{
+    overflow: scroll;
+    padding: 6vh 1vw 2vh 1vw;
+    height: 93.7vh;
+    border-top-left-radius: 0.5vw;
+    border-top-right-radius: 0.5vw;
+    /* backdrop-filter: blur(2px); */
+}
+
+.match{
+    /* width: 58vw; */
+    color: whitesmoke;
+    /* margin-bottom: 9.1vw; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    /* justify-content:space-around; */
+    height: 100%;
+}
+
+.match-details{
+    display: flex;
+    flex-direction: row;
+    height: 15vh;
+    margin-bottom: 5vh;
+}
+
+
+
+.matchHome, .matchAway{
+    width: 40%;
+    display: flex;
+    background-color: #01020ae3;
+    border-radius: 0.5vw;
+    justify-content: center;
+    align-items: center;
+}
+
+.matchHome{
+    border-bottom: 1px solid blue;
+}
+
+.matchAway{
+    border-bottom: 1px solid red;
+}
+
+
+.matchAway > div, .matchHome > div{
+    width: 90%;
+}
+
+.matchTime{
+    width: 20%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.75rem;
+}
+
+.matchLive{
+    height: 100%;
+    width: 75%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.matchLiveClock{
+    flex: 1;
+}
+
+.matchLiveClock p{
+    text-align: center;
+    font-size: 0.60rem;
+}
+
+.matchLiveScore{
+    flex: 1;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+
+.matchLiveScore p {
+    font-weight: bolder;
+    font-size: 0.85rem;
+}
+
+.matchPath{
+    width: 100%;
+    background-color: #01020ae3;
+    text-align: center;
+    color: #64719d;
+    margin-bottom: 2vh;
+    border-radius: 0.5vw;
+}
+
+.matchPath > p {
+    text-align: center;
+}
+
+.matchHomeContent, .matchAwayContent{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: 1vw;
+    font-weight: bolder;
+}
+
+.cardLogo{
+    width: 5vh;
+    height: 5vh;
+    border-radius: 0.2vw;
+}
+
+.containerCardLogo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 6vh;
+    height: 6vh;
+}
+
+.matchHomeContent > p, .matchAwayContent > p{
+    font-size: 0.6rem;
+}
+
+.matchOods{
+    margin-top: 5vh;
+    width: 100%;
+    margin-bottom: 5vh;
+}
+
+.matchOods td{
+    background-color: rgba(0, 0, 0, 0.575);
+    padding: 0.4vw !important;
+}
+
+.matchOods tr td:first-child{
+    text-align: start;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.matchOods td img{
+    margin-right: 2vw;
+    border-radius: 0.2vw;
+}
+
+.matchOods th{
+    background-color: rgba(0, 0, 0, 0.753);
+    padding: 0.3vw !important;
+}
+
+.matchOods p, .matchOods td, .matchOods th{
+    font-size: 0.8rem;
+    border-radius: 0.4vw;
+    text-align: center;
+}
+
+
+.matchDetailsStatsLive{
+    margin-top: 4vw;
+}
+
+.matchDetailsStatsCircles{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
